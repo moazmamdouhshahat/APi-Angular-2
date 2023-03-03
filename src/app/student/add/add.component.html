@@ -1,0 +1,27 @@
+<div class="container col-6 mt-5">
+    <form>
+        <div class="form-group">
+          <label >Name</label>
+          <input type="text" class="form-control" placeholder="Enter your Name"
+         [(ngModel)]="student['name']"  name="name">
+        </div>
+        <div class="form-group">
+          <label>age</label>
+          <input type="number" class="form-control" pkaceholder="Enter your age"
+          [(ngModel)]="student['age']" name="age">
+        </div>
+        <div class="form-group">
+          <label>level</label>
+          <input type="number" class="form-control" pkaceholder="Enter your level"
+          [(ngModel)]="student['level']" name="level">
+        </div>
+        <div class="form-group">
+          <label>gpa</label>
+          <input type="number" class="form-control" pkaceholder="Enter your gpa"  [(ngModel)]="student['gpa']" name="gpa">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="post()">Submit</button>
+      </form>
+</div>
